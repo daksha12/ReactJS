@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<style>
+    input {
+        padding: 10px 15px;
+        box-sizing: border-box;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="input">
+            <input type="text" id="input"><span>=</span>
+            <input type="text" id="result">
+        </div>
+
+
+        <div class="select">
+            <select name="" id="inputtype">
+                <option value="feet">feet</option>
+                <option value="cm">cm</option>
+                <option value="inch">Inch</option>
+            </select>
+            <select name="" id="resulttype">
+                <option value="feet">feet</option>
+                <option value="cm">cm</option>
+                <option value="inch">inch</option>
+            </select>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+           
+
+            let input = $("#input");
+            let result = $("#result");
+            let inputtype = $("#inputtype");
+            let resulttype = $("#resulttype");
+
+            input.on("keyup", myresult);
+            inputtype.on("change", myresult);
+            resulttype.on("change", myresult);
+
+            function myresult(e) {
+                let a = inputtype.val();
+                let b = resulttype.val();
+                let res = result.val();
+                let int = input.val();
+
+                if (a === "feet" && b === "cm"){
+                    res = Number(int)*30.48;
+                    result.val(res)
+                }
+                else if(a==="feet" && b ==="inch"){
+                    res = Number(int)*12;
+                    result.val(res)
+
+                }
+                else if(a ==="feet" && b==="feet"){
+                    res =Number(int);
+                    result.val(res)
+                }
+                else if(a==="cm" && b==="feet"){
+                    res = Number(int)/30.48;
+                    result.val(res)
+                }
+                else if(a==="cm" && b==="inch"){
+                    res = Number(int)/2.54;
+                    result.val(res)
+                }
+                else if(a==="cm" && b==="cm"){
+                    res = Number(int);
+                    result.val(res);
+                }
+                else if(a==="inch" && b==="feet"){
+                    res = Number(int)/12;
+                    result.val(res);
+                }
+                else if(a==="inch" && b==="cm"){
+                    res = Number(int)*2.54
+                    result.val(res)
+                }
+                else if(a==="inch" && b==="inch"){
+                    res = Number(int);
+                    result.val(res)
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

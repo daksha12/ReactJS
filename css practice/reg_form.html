@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+</head>
+<style>
+  input {
+    padding: 7px 11px;
+  }
+
+  body {
+    font-family: monospace;
+  }
+</style>
+
+<body>
+
+
+  <h3>Registration Form</h3><br><br>
+  <form action="" id="form">
+    <div id="error"></div>
+    <label for="">Name</label>
+    <input type="text" id="name" required><br><br>
+
+    <label for="">SurName</label>
+    <input type="text" id="surname" required><br><br>
+
+    <label for="">Age</label>
+    <input type="text" id="age" maxlength="2" required><br><br>
+
+    <label for="">Email</label>
+    <input type="email" id="email" required><br><br>
+
+    <label for="">Password</label>
+    <input type="password" id="password" maxlength="8" required><br><br>
+
+    <label for="">Confirm Password</label>
+    <input type="password" id="cpsw" maxlength="8" required><br><br>
+
+    <button type="reset" value="">Reset</button>
+    <button type="submit" value="" id="submit">Submit</button>
+
+  </form>
+
+  <script>
+   
+
+    let errorelement = document.getElementById("error");
+    var name = document.getElementById("name");
+    document.getElementById("form").addEventListener('submit', (e) => {
+
+      let messages = []
+
+      if (name.value === "Name" || name.value === "name") {
+        messages.push("name Can Not Be Name");
+
+      }
+      if (messages.length > 0) {
+        e.preventDefault()
+        errorelement.innerHTML = messages.join(",")
+      }
+
+    })
+  </script>
+</body>
+
+</html>

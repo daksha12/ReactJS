@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="t1">
+    <button id="btn" onclick="submit()">Click</button>
+
+    <div id="demo"></div>
+    <script>
+        function submit() {
+            var php = ['wp', 'larawel'];
+            var js = ['react', 'angular'];
+            var python=['ml','ds'];
+            document.getElementById("demo").innerHTML = "";
+            let data = document.getElementById("t1").value;
+
+            switch (data) {
+                case "php":{
+                    for(x of php)
+                    document.getElementById("demo").innerHTML += x +"<br>";
+                    break;
+                }
+                case "js":{
+                    for (y of js)
+                    document.getElementById("demo").innerHTML +=y +"<br>";
+                    break;
+                }
+                case "python":{
+                    for(m of python)
+                    document.getElementById("demo").innerHTML += m +"<br>";
+                    break;
+                }
+                default:
+                    alert("Error In Input");
+            }
+        }
+    </script>
+</body>
+
+</html>

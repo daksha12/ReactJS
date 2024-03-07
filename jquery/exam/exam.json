@@ -1,0 +1,27 @@
+[
+  {
+    "id": "id",
+    "name": "name",
+    "course": "course"
+  },
+  {
+    "id": 1,
+    "name": "anil",
+    "course": "BCA"
+  },
+  {
+    "id": 2,
+    "name": "amul",
+    "course": "BBA"
+  },
+  {
+    "id": 3,
+    "name": "arvind",
+    "course": "BBA"
+  },
+  {
+    "id": 4,
+    "name": "amit",
+    "course": "BCA"
+  }
+]

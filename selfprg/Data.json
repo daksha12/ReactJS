@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "title": "iPhone 9",
+      "brand": "Apple",
+      "img": "https://images.unsplash.com/photo-1551135049-8a33b5883817?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fG1lZXRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "category": "smartphones"
+    },
+    {
+      "id": 2,
+      "title": "iPhone X",
+      "brand": "Apple",
+      "img": "https://images.unsplash.com/photo-1551135049-8a33b5883817?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fG1lZXRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "category": "smartphones"
+    },
+    {
+      "id": 3,
+      "title": "Samsung Universe 9",
+      "brand": "Samsung",
+      "img": "https://images.unsplash.com/photo-1551135049-8a33b5883817?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fG1lZXRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "category": "smartphones"
+    },
+    {
+      "id": 4,
+      "title": "OPPOF19",
+      "brand": "OPPO",
+      "img": "https://images.unsplash.com/photo-1551135049-8a33b5883817?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fG1lZXRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "category": "smartphones"
+    },
+    {
+      "id": 5,
+      "title": "Huawei P30",
+      "brand": "Huawei",
+      "img": "https://images.unsplash.com/photo-1551135049-8a33b5883817?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fG1lZXRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "category": "smartphones"
+    },
+    {
+      "id": 6,
+      "title": "MacBook Pro",
+      "brand": "Apple",
+      "img": "https://images.unsplash.com/photo-1551135049-8a33b5883817?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fG1lZXRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "category": "laptops"
+    },
+    {
+      "id": 7,
+      "title": "Samsung Galaxy Book",
+      "brand": "Samsung",
+      "img": "https://images.unsplash.com/photo-1551135049-8a33b5883817?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fG1lZXRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "category": "laptops"
+    },
+    {
+      "id": 8,
+      "title": "Microsoft Surface Laptop 4",
+      "brand": "Microsoft Surface",
+      "img": "https://images.unsplash.com/photo-1551135049-8a33b5883817?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fG1lZXRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "category": "laptops"
+    },
+    {
+      "id": 9,
+      "title": "Infinix INBOOK",
+      "brand": "Infinix",
+      "img": "https://images.unsplash.com/photo-1551135049-8a33b5883817?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fG1lZXRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "category": "laptops"
+    },
+    {
+      "id": 10,
+      "title": "HP Pavilion 15-DK1056WM",
+      "brand": "HP Pavilion",
+      "img": "https://images.unsplash.com/photo-1551135049-8a33b5883817?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fG1lZXRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "category": "laptops"
+    }
+  ]
+  

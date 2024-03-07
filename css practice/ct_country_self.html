@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <select name="" id="country">
+        <option value="" id="india">India</option>
+        <option value="" id="pk">Pk</option>
+        <option value="" id="uk">uk</option>
+        <option value="" id="us">Us</option>
+    </select>
+    <select name="" id="city"></select> 
+    <script>
+        var india = document.getElementById("india");
+        var city = document.getElementById("city");
+
+        india.addEventListener('click', () => {
+            city.innerHTML = '<option>Rajkot</option> <option>Abad</option> ';
+        });
+
+        var pk = document.getElementById("pk");
+        pk.addEventListener('click', () => {
+            city.innerHTML = '<option>karchi</option> <option>islambad</option> ';
+        });
+        var uk = document.getElementById('uk');
+        uk.addEventListener('click', () => {
+            city.innerHTML = '<option>London</option> <option>dubai</option>'
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+ <input type="number" id="t1" placeholder="Enter No">
+    <button onclick="show()" id="demo">Check</button>
+    <p id="ans"></p>
+    <script>
+        function show(){
+        var a = document.getElementById("t1").value;
+        if (a % 2 == 0) {
+            ans.innerHTML = 'no is Even:'+ a;
+        } else {
+            ans.innerHTML = 'no is Odd:'+ a;
+        }
+    }
+    </script>
+</body>
+
+</html>

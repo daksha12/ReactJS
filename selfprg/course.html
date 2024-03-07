@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <input type="text " id="t1" placeholder="Enter course"/> 
+        <button onclick="show()">Submit</button>
+<h3 id="ans"></h3>
+    </div>
+    <script>
+function show(){
+        var php=['wp','larawel'];
+        var js=["react,nodejs,angular"];
+
+        var data = document.getElementById("t1").value;
+        switch(data){
+            case "php":{
+                for ( x of php) {
+                   document.getElementById("ans").innerHTML += x + '<br>';
+                }
+                break;
+            }
+            case "js":{
+                for (y of js)
+                    document.getElementById("ans").innerHTML += y +'<br>';
+                break;
+            }
+            default:
+                alert('enter valid data');
+        }
+
+    }
+
+    </script>
+</body>
+</html>

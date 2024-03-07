@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Name</label><br>
+        <input type="text" id="name" required><br><br>
+    
+        <label for="">SurName</label><br>
+        <input type="text" id="surname" required><br><br>
+
+        <label for="">Date</label><br>
+        <input type="datetime-local"><br><br>
+
+        <label for="">Enter Email</label><br>
+        <input type="email" id="email" required><br><br>
+
+        <label for="">Enter Password</label><br>
+        <input type="password" id="psw"><br><br><span id="matchpsw"></span>
+        <label for="">Confirm Password</label><br>
+        <input type="password" id="cfpsw" required><br>  <span id="notmatchpsw"></span>
+        <p id="demo"></p>
+
+        <button type="submit" onclick="login()">SUBMIT</button><br><br>
+
+    </form>
+<div id="ans"></div>
+    <script>
+        function login(e){
+        
+        var nm = document.getElementById("name").value;
+        var show = document.getElementById("ans");
+        if(nm=='name' || nm=="Name"){
+            show.innerHTML +='name is not valid'
+            return false;
+        }
+        show.innerHTML +='Name is'+ nm +"<br>";
+
+        var snm = document.getElementById("surname").value;
+        show.innerHTML +='Surname is'+snm +"<br>";
+
+        var password = document.getElementById('psw').value;
+        if(password === '' || password === "null")
+        {
+            show.innerHTML += 'pls Enter password'
+            return false;
+        }
+        var ConfirmPassword = document.getElementById('cfpsw').value;
+        if(password!=ConfirmPassword){
+            matchpsw.innerHTML = 'password Not Match'
+            return false;
+        }
+        else{
+            notmatchpsw.innerHTML = 'password Match😊'
+           return true;
+        }
+
+        }
+    </script>
+</body>
+</html>

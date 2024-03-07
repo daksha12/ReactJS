@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <label for="">Enter Email</label><br>
+        <input type="email" id="email"><br><br>
+
+        <label for="">Enter Password</label><br>
+        <input type="password" id="psw"><br><br>
+        <label for="">Confirm Password</label><br>
+        <input type="password" id="cfpsw"><br>
+        <p id="demo"></p>
+
+        <button onclick="login()">SUBMIT</button><br><br>
+
+    </div>
+    <script>
+        function login(){
+            var password = document.getElementById("psw").value;
+            var cf = document.getElementById("cfpsw").value;
+
+            if (password === '' || cf === null) {
+                alert('pls Enter');
+                return false;
+            }
+
+            if (password != cf) {
+                document.getElementById("demo").innerHTML = 'Password Not Match';
+                return false;
+            }
+            else {
+                document.getElementById("demo").innerHTML = 'Password Match 😊';
+                return true;
+
+            }
+        }
+    </script>
+</body>
+
+</html>

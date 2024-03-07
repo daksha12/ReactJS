@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Strings</h1>
+<h2>The matchAll() Method</h2>
+
+<p>ES2020 intoduced the string method matchAll().</p>
+
+<p id="demo"></p>
+
+<script>
+    
+let txt = "Hello World In The IT World World." 
+var res = txt.matchAll("World/g")
+
+document.getElementById("demo").innerHTML = Array.from(res);
+
+
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(-10,-6);
+document.getElementById("demo").innerHTML = part;
+
+
+ document.getElementById("demo").innerHTML = Math.floor(Math.random()* 10) + 200;
+</script>
+
+</body>
+</html>

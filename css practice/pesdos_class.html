@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* unvisited link */
+        a:link {
+            color: red;
+        }
+
+        /* visited link */
+        a:visited {
+            color: green;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: hotpink;
+        }
+
+        /* selected link */
+        a:active {
+            color: blue;
+        }
+
+        p::first-letter {
+            color: #ff0000;
+            font-size: x-large;
+
+        }
+
+        .mansi {
+            height: 50px;
+            overflow: visible;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Styling a link depending on state</h2>
+
+    <p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+    <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+    <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+    <p class="mansi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quam debitis fugiat perferendis unde pariatur quasi
+        accusantium quaerat ut officia, veniam quis tenetur expedita nostrum, eveniet, libero rem provident. Expedita,
+        quis ducimus in nisi minima iste inventore, earum, optio ex dignissimos aliquid explicabo tempore consequuntur
+        culpa voluptates fugit? Rerum, nobis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officia nam quas earum atque expedita, fuga
+        optio ipsa magni exercitationem quasi nihil non repellat, laudantium, eius rerum deserunt et. Nesciunt fugit
+        saepe velit! Natus provident ipsam, maiores, amet porro cupiditate suscipit earum fuga ipsa quisquam odit
+        aspernatur blanditiis non unde explicabo. Facilis voluptatibus eius, placeat non, velit officia temporibus nihil
+        impedit quo voluptatem, ducimus id vel earum. Nesciunt maxime commodi magni impedit molestias quo quasi sit
+        consectetur, nemo, odio veniam aperiam perferendis, dolor vero exercitationem? Nihil hic quisquam, obcaecati
+        odit minima eum maiores ratione ipsa magni accusantium expedita. Inventore, sint!
+    </p>
+</body>
+
+</html>

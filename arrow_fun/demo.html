@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        const m = (x, y) => x * y;
+        console.log(m(4,5));
+        document.getElementById('demo').innerHTML = m(5,8)
+        
+        var color = ['red','green','blue'];
+        var fruit = ['orange','mango','banana'];
+        var ans = [color,...fruit]
+        console.log(ans);
+        document.getElementById('demo').innerHTML = ans;
+    </script>
+</body>
+
+</html>
