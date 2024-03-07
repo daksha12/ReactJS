@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="no" placeholder="Enter Value" />
+
+    <input type="text" id="t2" placeholder="Enter Value" />
+   
+
+    <button onclick="display()">CLICK</button>
+
+    <script>
+      //repete=>iteration=>loop
+      function display() {
+        var n = parseInt(document.getElementById("no").value);
+
+        for (let i = 1; i <= n; i++) {
+          console.log(i);
+        }
+        //1,2............n
+        var n = parseInt(document.getElementById("t2").value);
+        for (a = 1; a <= n; a++) {
+          console.log(a);
+        }
+
+        
+      }
+    </script>
+  </body>
+</html>

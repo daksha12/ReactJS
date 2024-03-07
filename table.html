@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .box{
+        margin: 70px;
+        padding: 35px;
+        background-color: rgb(221, 225, 184);
+        width: 800px;
+        height: 600px;
+    }
+    h4{
+       
+        margin: 20px;
+        border: white;
+        border-radius: 5px;
+        width: 500px;
+        background-color: pink;
+    }
+</style>
+<body>
+    <div class="box">
+    <label for="">Enter Value</label>
+    <input type="text" id="t1">
+        <button onclick="table()">Show</button>
+    <h4 id="ans">
+
+    </h4></div>
+    <script>
+        function table(){
+        var no = document.getElementById("t1").value;
+
+        //create Table
+
+        for(i=1;i<=10;i++){
+            result = i * no;
+
+            document.getElementById("ans").innerHTML += (`${no} * ${i} = ${result} `+"<br>" );
+        }
+    }
+    </script>
+</body>
+</html>
