@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<style>
+    .show{
+     /* display: none; */
+    }
+</style>
+<body>
+    <h1>welcome jquery</h1>
+    <h2>hello world</h2>
+    <p class="p1" style="border: 1px dashed red;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero impedit nostrum consectetur illo
+        aperiam natus.
+        Nam, deserunt nesciunt, harum maxime esse sit consequatur magnam voluptatibus veniam commodi dicta expedita
+        maiores?
+
+    </p>
+    <p class="show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magnam quasi aut perferendis.
+        Officiis
+        nesciunt aliquam non sit! Vero, inventore.</p>
+
+    <button class="btn1">FADEIN</button>
+    <button class="btn2">FADEOUT</button>
+    <button class="btn3">FADETOGGLE</button>
+
+
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                $(".show").fadeOut(2000)
+            })
+            $(".btn2").click(function () {
+                $(".show").fadeIn(2000)
+            })
+            $(".p1").click(function () {
+               $(".show").slideUp("slow");
+            })
+        })
+
+
+    </script>
+</body>
+
+</html>

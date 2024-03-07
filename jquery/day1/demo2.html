@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>welcome jquery</h1>
+    <h2>hello world</h2>
+    <p class="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero impedit nostrum consectetur illo
+        aperiam natus.
+        Nam, deserunt nesciunt, harum maxime esse sit consequatur magnam voluptatibus veniam commodi dicta expedita
+        maiores?
+
+    </p>
+    <p class="show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magnam quasi aut perferendis.
+        Officiis
+        nesciunt aliquam non sit! Vero, inventore.</p>
+
+    <button class="btn1">hide</button>
+    <button class="btn2">show</button>
+    <button class="btn3">toggle</button>
+    <button class="btn4">FADEIN</button>
+
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function(){
+                $("p").hide(function(){
+
+                })
+                $(".btn2").click(function(){
+                    $("p").show(function(){})
+                })
+                $(".btn3").click(function(){
+                    $("p").toggle(function(){})
+                })
+                $(".btn4").click(function(){
+                    $(".p1").fadeOut(2000)
+                });
+                
+            })
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>good morning</h1>
+    <h1>Good Evening</h1>
+    <h1>Good Night</h1>
+    <input type="text" id="t1" placeholder="Enter Name"><button id="btn1">Click Me</button>
+    <p><b>Lorem ipsum dolor sit amet consectetur </b>adipisicing elit. Perferendis a non consequuntur id aspernatur ut?</p>
+
+</body>
+<script>
+    $(document).ready(function () {
+        $("h1").click(function () {
+        var data = $(this).html();
+        console.log(data); 
+     })
+       $("#btn1").click(function(){
+        var name = $("#t1").val("HELLO WORLD");
+        
+        var para =$("p").html();
+        console.log(para);
+
+        var para1 =$("p").text();
+        console.log(para1);
+       }) 
+    })
+</script>
+
+</html>

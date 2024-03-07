@@ -1,0 +1,37 @@
+/* *{
+    box-sizing: border-box;
+}
+.mysearch{
+   width: 400px !important;
+}
+.mybtns{
+    margin-top: 45px;
+
+
+}
+/* .myslider{
+    padding-top: 65px;
+} */
+#myslider{
+    margin-top: 100px;
+    
+}
+.myvej img{
+    /* border: 1px solid black; */
+    width: 190px;
+}
+.mybrand img{
+    width: 185px;
+}
+.myread{
+    border: 1px solid black;
+}
+@media only screen and (max-width: 600px){
+    .bank img{
+        width: 200px;
+        column-gap: 10px;
+    }
+    .bevrages{
+        width: 380px;
+    }
+}

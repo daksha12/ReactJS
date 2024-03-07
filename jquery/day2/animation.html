@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+
+    </script>
+</head>
+<style>
+    .box {
+        position: relative;
+        background-color: lightsalmon;
+        height: 150px;
+        width: 150px;
+    }
+</style>
+
+<body>
+    <button class="btn">ANIMATE</button>
+    <div class="box">
+
+    </div>
+    
+    <script>
+        $(document).ready(function () {
+            $('.btn').click(function () {
+
+                $(".box").animate({
+                    
+                    //left: '250px',
+                    //opacity: '0.5',
+                    //height: '+=250px',
+                    //width: '+=250px'
+                    height:'toggle'
+                });
+
+            })
+        })
+    </script>
+</body>
+
+</html>

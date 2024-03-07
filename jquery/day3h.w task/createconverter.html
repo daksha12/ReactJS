@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Create converter</title>
+    <style>
+        body{
+           background-image: linear-gradient(to left,red,yellow,pink);
+        }
+        .main{
+            
+           background-color: darkgray;
+            height: 500px;
+            width:500px;
+            margin-top: 120px;
+            margin-left: 400px;
+            padding-top: 50px;
+            padding-left: 50px;
+        
+        }
+        input{
+            padding: 15px;
+            border: 1px solid black;
+        }
+        button{
+            border: 1px solid black;
+        }
+        button:hover{
+            background-color:lightgray ;
+        }
+        h2{
+            color: cornsilk;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <h2>Converter</h2>
+    <!-- <div class="A" >
+        <input type="text" id="t1">
+        <select id="convertlist2">
+            <option value="kilometer"id="km" >kilometer</option>
+            <option value="feet" id="feet">Feet</option>
+            <option value="inch" id="inch">Inch</option>
+            <option value="meter" id="meter">Meter</option>
+        
+        </select>
+    </div> -->
+    <div class="B">
+        <input type="text" id="cm" placeholder="Type Value"><br><br>
+        </div>
+    <button id="meter1" >convert into meter</button><br><br>
+    <button id="feet1" >convert into feet</button><br><br>
+    <button id="inch1" >convert into inch</button><br><br>
+    <button id="km1" >convert into kilometer</button><br><br>
+    Ans:
+    <input type="text" id="ans">
+    </div>
+
+
+    <script>
+        $(document).ready(function(){
+            $("#meter1").click(function(){
+        
+          var meter = $("#cm").val()
+          var fm = parseFloat(meter/100);
+          $("#ans").val(fm);
+            console.log(fm)
+            });
+          $("#feet1").click(function(){
+        
+        var feet = $("#cm").val()
+        var fm2 = parseFloat(feet/30.48);
+        $("#ans").val(fm2);
+          console.log(fm2)
+          })
+          $("#inch1").click(function(){
+        
+        var inch = $("#cm").val()
+        var fm3 = parseFloat(inch/2.54);
+        $("#ans").val(fm3);
+          console.log(fm3)
+          })
+          $("#km1").click(function(){
+        
+        var km = $("#cm").val()
+        var fm4 = parseFloat(km/100000);
+        $("#ans").val(fm4);
+          console.log(fm4)
+          })
+
+
+
+        })
+    </script>
+</body>
+</html>

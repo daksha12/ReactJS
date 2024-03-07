@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<style>
+    body {
+        background-image: linear-gradient(to left, red, yellow, pink, orange);
+    }
+
+    .main {
+        width: 50%;
+        border: 1px solid red;
+        padding: 30px;
+        margin: 80px;
+    }
+
+    input {
+
+        font-size: 20px;
+        height: 35px;
+    }
+
+    label {
+        font-size: 20px;
+        height: 35px;
+    }
+
+    p {
+        font-size: 20px;
+
+    }
+
+    h1 {
+        color: rgb(154, 49, 49);
+    }
+
+    button {
+        border-radius: 5px;
+        font-size: 25px;
+        padding: 15px;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <h1>Registration Form</h1>
+        <form action="">
+            <label for="">Enter First Name</label>
+            <input type="text" id="t1" required><br><br>
+
+            <label for="">Enter Last Name</label>
+            <input type="text" id="t2" required><br><br>
+
+            <label for="">Enter Age</label>
+            <input type="text" id="t3" maxlength="2" required><br><br>
+
+
+
+            <label for="">Enter Email</label>
+            <input type="email" id="t4" required><br><br>
+
+            <label for="">Enter Password</label>
+            <input type="password" id="t5" class="psw1" maxlength="8" required>
+            <input type="checkbox" onclick="display1()">Show <br><br>
+
+            <label for="">Confirm Password</label>
+            <input type="password" id="t6" class="psw2" maxlength="8" required>
+            <input type="checkbox" onclick="display2()">Show<br><br>
+            <button id="btn" onclick="validate()">SUBMIT</button>
+            <div class="box" id="ans">
+
+                <p id="ans1"></p>
+                <p id="ans2"></p>
+                <p id="ans3"></p>
+                <p id="ans4"></p>
+                <p id="ans5"></p>
+                <p id="ans6"></p>
+
+            </div>
+    </div>
+
+    </form>
+    <script>
+        $(document).ready(function () {
+
+            $("#btn").click(function () {
+                var mygen = $("#t1").val();
+                var b = $("#t2").val();
+                var c = $("#t3").val();
+                var d = $("#t4").val();
+                var e = $("#t5").val();
+
+                var psw1 = $(".psw1").val();
+                var psw2 = $(".psw2").val();;
+                if (psw1 != psw2) {
+                    $("#ans6").text('password Not Match ☹')
+
+                }
+                else {
+                    $("#ans6").text('Password Match 😊')
+
+                }
+
+
+                $("#ans1").html(`<p>First name is:${mygen}`);
+                $("#ans2").html(`<p> Last name is:${b}`);
+                $("#ans3").html(`<p>Age:${c}`);
+                $("#ans4").html(`<p>Email:${d}`);
+                $("#ans5").html(`<p>Password is:${e}`);
+
+            })
+            //return false;
+        })
+        function display1() {
+            var x = document.getElementById("t5");
+            if (x.type === "password") {
+                x.type = "text";
+            }
+            else {
+                x.type = "password";
+            }
+        }
+        function display2() {
+            var y = document.getElementById("t6");
+            if (y.type === "password") {
+                y.type = "text";
+            }
+            else {
+                y.type = "password";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

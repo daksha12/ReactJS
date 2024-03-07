@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<style>
+    body{
+        background-image: linear-gradient(yellow,orange,pink,rgb(225, 140, 140)); */
+    }
+    .box{
+        border: 1px solid red;
+        margin: auto;
+        padding: 50px;
+         
+        height:100vh;
+        width: 100%;
+    }
+    input{
+        padding: 5px;
+        margin-top: 15px;
+    }
+    button{
+        margin-top: 15px;
+        padding: 10px;
+    }
+</style>
+<body>
+    <div class="box">
+        <center>
+        <h1 style="color:rgb(225, 140, 140)">CALCULATOR</h1>
+        <input type="text" id="t1" placeholder="ENTER NO:1"><br>
+        <input type="text" id="t2" placeholder="ENTER NO:2"><br>
+        <input type="text" id="ans" placeholder="ANSWER HERE"><br>
+
+        
+
+        <button id="add">ADDITION</button>
+        <button id="sub">SUBSTRACTION</button>
+        <button id="mul">MULTIPLY</button>
+        <button id="div">DIVSION</button></center>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#add").click(function () {
+                var a = $("#t1").val();
+                var b = $("#t2").val();
+                var c = parseInt(a) + parseInt(b);
+                $("#ans").val(c);
+            })
+
+            $("#sub").click(function(){
+                var a = $("#t1").val();
+                var b = $("#t2").val();
+                var c = parseInt(a)-parseInt(b);
+                $("#ans").val(c);              
+            })
+            $("#mul").click(function(){
+                var a = $("#t1").val();
+                var b = $("#t2").val();
+                var c = parseInt(a)*parseInt(b);
+                $("#ans").val(c);              
+            })
+            $("#div").click(function(){
+                var a = $("#t1").val();
+                var b = $("#t2").val();
+                var c = parseInt(a)/parseInt(b);
+                $("#ans").val(c);              
+            })
+        })
+    </script>
+</body>
+
+</html>

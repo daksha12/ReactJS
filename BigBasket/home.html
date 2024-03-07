@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container-fluid sticky-top">
+
+    <nav class="navbar navbar-expand-lg  bg-light">
+      <div class="container-fluid">
+        <img src="images/bs.jpg" alt="" height="40px">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <form class="d-flex" role="search">
+          <input class="form-control mysearch me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+        <span><i class="fa-solid fa-basket-shopping" style="font-size: 20px; color: red;"></i>My Basket 0 items
+        </span>
+      </div>
+
+    </nav>
+  </div>
+
+  <!-- images start -->
+  <div id="carouselExampleControls" class="carousel slide" id="myslider" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/c1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/c2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/c3.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/c4.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/c5.jpg" class="d-block w-100" alt="...">
+        <img src="images/c5.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- images End -->
+
+  <!-- small img start -->
+  <div class="container-fluid">
+    <div class="row mybtns">
+      <div class="col-lg-2 col-6 gap-sm-3 mt-3">
+        <img src="images/i1.jpg" alt="">
+      </div>
+      <div class="col-lg-2 col-6 gap-sm-3  mt-3">
+        <img src="images/i2.jpg" alt="">
+      </div>
+      <div class="col-lg-2 col-6 gap-sm-3 mt-3">
+        <img src="images/i3.jpg" alt="">
+      </div>
+      <div class="col-lg-2 col-6 gap-sm-3 mt-3">
+        <img src="images/i4.jpg" alt="">
+      </div>
+      <div class="col-lg-2 col-6 gap-sm-3 mt-3">
+        <img src="images/i5.jpg" alt="">
+      </div>
+      <div class="col-lg-2 col-6 gap-sm-3 mt-3">
+        <img src="images/i6.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="container mt-3">
+    <center>
+      <h3>My Smart Basket</h3>
+      <hr>
+    </center>
+  </div>
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col">
+
+        <div class="card-group">
+          <div class="card">
+            <img src="images/crd1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/crd2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/crd3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <img src="images/crd4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <img src="images/crd5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- card End here -->
+
+
+  <!-- bank-offers-here start -->
+  <div class="container mt-5">
+    <center>
+      <h3>
+        Bank Offers
+      </h3>
+      <hr>
+    </center>
+  </div>
+  <div class="container bank">
+    <div class="row">
+      <div class="col-lg-3 col-6 mt-5">
+        <img src="images/b1.jpg" alt="" width="270px">
+      </div>
+      <div class="col-lg-3 col-6 mt-5">
+        <img src="images/b2.jpg" alt="" width="270px">
+      </div>
+      <div class="col-lg-3 col-6 mt-5">
+        <img src="images/b3.jpg" alt="" width="270px">
+      </div>
+      <div class="col-lg-3 col-6 mt-5">
+        <img src="images/b4.jpg" alt="" width="270px">
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- bank-offers-here End-->
+
+
+
+  <div class="container mt-5">
+    <center>
+      <h3>Fruits and Vegetables</h3>
+      <hr>
+    </center>
+  </div>
+
+  <div class="container">
+    <!-- <div class="d-sm-flex justify-content-center gap-2  myvej">
+      
+      
+      <img src="images/v3.jpg" alt="">
+      <img src="images/v4.jpg" alt="">
+      <img src="images/v5.jpg" alt="">
+    </div> -->
+    <div class="row">
+      <div class="col-lg-2 col-6  myvej">
+        <img src="images/v1.jpg" alt="">
+      </div>
+      <div class="col-lg-2 col-6 myvej">
+        <img src="images/v2.jpg" alt="">
+      </div>
+      <div class="col-lg-2 col-6 myvej">
+        <img src="images/v3.jpg" alt="">
+      </div>
+      <div class="col-lg-2 col-6 myvej">
+        <img src="images/v4.jpg" alt="">
+      </div>
+      <div class="col-lg-2 col-6 myvej">
+        <img src="images/v5.jpg" alt="">
+      </div>
+      <div class="col-lg-2 col-6 myvej">
+        <img src="images/v6.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- block start -->
+  <div class="container">
+    <center>
+      <h3>Beverages</h3>
+      <hr>
+    </center>
+  </div>
+  <!-- block End -->
+
+  <div class="container-lg ">
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        <img src="images/beverages1.jpg" alt="" class="bevrages">
+      </div>
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-6">
+            <img src="images/bev2.jpg" alt="">
+            <img src="images/bev3.jpg" alt="">
+          </div>
+          <div class="col-6">
+            <img src="images/bev4.jpg" alt="">
+            <img src="images/bev5.jpg" alt="">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Brand Store -->
+  <div class="container mt-5">
+    <center>
+      <h3>Brand Store</h3>
+      <hr>
+    </center>
+
+
+    <div class="row mybrand">
+      <div class="col-lg-2 col-6 ">
+        <img src="images/brand1.jpg" alt="">
+
+      </div>
+      <div class="col-lg-2 col-6">
+        <img src="images/brand2.jpg" alt="">
+
+      </div>
+      <div class="col-lg-2 col-6">
+        <img src="images/brand3.jpg" alt="">
+
+      </div>
+      <div class="col-lg-2 col-6">
+        <img src="images/brand4.jpg" alt="">
+
+      </div>
+      <div class="col-lg-2 col-6">
+        <img src="images/brand5.jpg" alt="">
+
+      </div>
+      <div class="col-lg-2 col-6">
+        <img src="images/brand6.jpg" alt="">
+
+      </div>
+    </div>
+  </div>
+  <!-- Brand Store -->
+
+
+
+
+  <!-- read more -->
+
+  <div class="container myread">
+    <h3>Bigbasket – online grocery store</h3>
+    <p>Did you ever imagine that the freshest of fruits and vegetables, top quality pulses and food grains, dairy
+      products and hundreds of branded items could be handpicked and delivered to your home, all at the click of a
+      button? India’s first comprehensive online megastore, bigbasket.com, brings a whopping 20000+ products with more
+      than 1000 brands, to over 4 million happy customers. From household cleaning products to beauty and makeup,
+      bigbasket has everything you need for your daily needs. bigbasket.com is convenience personified We’ve taken away
+      all the stress associated with shopping for daily essentials, and you can now order all your household products
+      and even buy groceries online without travelling long distances or standing in serpentine queues. Add to this the
+      convenience of finding all your requirements at one single source, along with great savings, and you will realize
+      that bigbasket- India’s largest online supermarket, has revolutionized the way India shops for groceries. Online
+      grocery shopping has never been easier. Need things fresh? Whether it’s fruits and vegetables or dairy and meat,
+      we have this covered as well! Get fresh eggs, meat, fish and more online at your convenience. Hassle-free Home
+      Delivery options
+
+
+      We deliver to 25 cities across India and maintain excellent delivery times, ensuring that all your products from
+      groceries to snacks branded foods reach you in time.
+
+    <ul>
+      <li>Slotted Delivery: Pick the most convenient delivery slot to have your grocery delivered. From early morning
+        delivery for early birds, to late-night delivery for people who work the late shift, bigbasket caters to every
+        schedule.</li>
+
+      <li>Express Delivery: This super useful service can be availed by customers in cities like Bangalore, Mumbai,
+        Pune, Chennai, Kolkata, Hyderabad and Delhi-NCR in which we deliver your orders to your doorstep in 90 Minutes.
+      </li>
+      <li>BB Specialty stores: Missed out on buying that essential item from your favorite neighborhood store for
+        tonight’s party? We’ll deliver it for you! From bakery, sweets and meat to flowers and chocolates, we deliver
+        your order in 90 minutes, through a special arrangement with a nearby specialty store, verified by us.</li>
+    </ul>
+    </p>
+    <button id="btn">Read More</button>
+    <h3 class="readmore">India’s biggest Online Supermarket</h3>
+    <p class="readmore">bigbasket.com believes in providing the highest level of customer service and is continuously
+      innovating to meet
+      customer expectations. Our On-time Guarantee is one such assurance where we refund 5% of the bill value if the
+      delivery is delayed (however, due to the pandemic caused by Covid-19 our delivery might get delayed. Delivery
+      Guarantee will not be applicable). For all your order values above Rs. 1200, we provide free delivery. A wide
+      range of imported and gourmet products are available through our express delivery and slotted delivery service. If
+      you ever find an item missing on delivery or want to return a product, you can report it to us within 48 hours for
+      a ‘no-questions-asked’ refund.
+
+      Best quality products for our quality-conscious customers.
+
+      bigbasket.com is synonymous with superior quality and continues to strive for higher levels of customer trust and
+      confidence, by taking feedback and giving our customers what they want. We have added the convenience of pre-cut
+      fruits in our Fresho range. If it’s a product category you’re looking to shop from, we’ve made it convenient for
+      you to access all products in a section easily. For instance, if you’re looking for beverages, you can order from
+      a long list of beverages that include cool drinks, hot teas, fruit juices and more.
+
+      We are proud to be associated closely with the farmers from whom we source our fresh products. Most of our
+      farm-fresh products are sourced directly from farmers, which not only ensures the best prices and freshest
+      products for our customers but also helps the farmers get better prices. With more than 80 Organic Fruits and
+      Vegetables and a wide range of organic staples, bigbasket has the largest range in the organic products category.
+
+      When it comes to payment, we have made it easy for our customers can pay through multiple payment channels like
+      Credit and Debit cards, Internet Banking, e-wallets and Sodexo passes or simply pay Cash on Delivery (COD).The
+      convenience of shopping for home and daily needs, while not compromising on quality, has made bigbasket.com the
+      online supermarket of choice for thousands of happy customers across India.</p>
+  </div>
+  <!-- read less -->
+  <div class="container mt-4 mb-5 pt-3 bg-light">
+    <div class="row">
+      <div class="col-lg-3">
+        <ul>
+          <p> Bigbasket</p>
+          <li>About Us</li>
+          <li>In News</li>
+          <li>Green Basket</li>
+          <li>Privacy Policy</li>
+          <li>Affliate</li>
+          <li>Terms And Condation</li>
+          <li>Carrers At Big Basket</li>
+          <li>BB Instant</li>
+          <li>BB Daily</li>
+          <li>BB Block</li>
+          <li>BBnow</li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <ul>
+          <p>Help</p>
+          <li>FAQs</li>
+          <li>Contact Us</li>
+          <li>bb Wallet FAQs</li>
+          <li>bb Wallet T&Cs</li>
+          <li>Vendor Connect</li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <p>Download Our App</p>
+       <img src="images/play.jpg" alt="">
+       <img src="images/apple.jpg" alt="">
+      </div>
+      <div class="col-lg-3">
+        <p>Get Social With Us</p>
+        <i class="fa-brands fa-facebook" style="font-size: 30px;"></i>
+        <i class="fa-brands fa-pinterest" style="font-size: 30px;"></i>
+        <i class="fa-brands fa-twitter" style="font-size: 30px;"></i>
+        <i class="fa-brands fa-instagram" style="font-size: 30px;"></i>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    $(document).ready(function () {
+      $("#btn").click(function () {
+        $(".readmore").toggle()
+      })
+    })
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
