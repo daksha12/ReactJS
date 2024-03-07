@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;800&display=swap");
+
+input {
+  padding: 10px;
+}
+.Contact_wrap {
+  flex-wrap: wrap;
+}
+.Contact_text span {
+  color: #777 !important;
+  letter-spacing: 1px;
+}
+.Contact_text i {
+  color: #00bcd5;
+}
+.Contact_text{
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+
+}
+.Contact_text h4 {
+  color: #444;
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+@media only screen and (max-width: 600px) {
+  input[type="text"] {
+    width: 100% !important;
+  }
+  .Contact_text{
+    margin-top: 25px;
+  }
+}

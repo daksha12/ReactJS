@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;800&display=swap");
+.service_icon i {
+  font-size: 30px;
+  border-radius: 38px;
+  background-color: #fd5c63;
+  color: #fff;
+  padding: 18px;
+}
+.Services_yellow i {
+  font-size: 30px;
+  border-radius: 38px;
+  background-color: #f48924;
+  color: #fff;
+  padding: 18px;
+}
+.services_green i {
+  font-size: 30px;
+  border-radius: 38px;
+  background-color: #30c39e;
+  color: #fff;
+  padding: 18px;
+}
+.service_blue i {
+  font-size: 30px;
+  border-radius: 38px;
+  background-color: #00bce4;
+  color: #fff;
+  padding: 18px;
+}
+.services_servicesNM {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+.service_heading {
+  letter-spacing: 1px;
+  color: #333;
+  font-family: "Dosis", sans-serif;
+  font-weight: 800px;
+
+  border-bottom: 1px solid #eee;
+}
+.Service_para {
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 1.9em;
+  color: #777;
+}
+.Appoint_heading {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
+.service_icon i {
+  margin-left: 110px;
+}
+@media only screen and (max-width: 600px) {
+  .service_icon {
+    margin-top: 8px;
+    margin-bottom: 15px;
+    text-align: center !important;
+  }
+  .iconsofi {
+    margin-left: 0 !important;
+    text-align: center;
+  }
+  .service_icon i {
+    margin-left: 0;
+  }
+}

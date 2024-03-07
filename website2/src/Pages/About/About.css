@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.About_banner_img {
+  background: rgba(0, 0, 0, 0.2)
+    url("https://demo.w3layouts.com/demos_new/template_demo/22-03-2019/dental_health-demo_Free/656496551/web/images/innerbg.jpg");
+  position: relative;
+
+  height: 300px !important;
+  background-size: cover;
+  background-position: 100%;
+  width: 100%;
+  background-blend-mode: darken;
+}
+.photos_border {
+  
+ height: 300px !important;
+  box-shadow: 2px 2px 4px 3px gray;
+}
+.bottom_title{
+    color: #353c4e;
+}
+.bottom_para{
+    color: #a5a5a5;
+}
+.photos_border:hover {
+  scale: 1.1;
+  transition: 5s;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .Doctors_list{
+        flex-wrap: wrap;
+    }
+    .About_banner_img {
+      background: rgba(0, 0, 0, 0.2)
+       url("https://demo.w3layouts.com/demos_new/template_demo/22-03-2019/dental_health-demo_Free/656496551/web/images/innerbg.jpg");
+      position: relative;
+    
+      height: 100px !important;
+      background-size: cover;
+     background-position: 100%;
+      width: 100%;
+      background-blend-mode: darken;
+    }
+  }

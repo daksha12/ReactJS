@@ -1,0 +1,324 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;800&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;800&display=swap");
+:root {
+  --fontcolor: #777;
+  --blue: #00bcd5;
+  --white: #fff;
+  --whitelight: #ffffff;
+  --pink: #ed948e;
+}
+
+.topbar {
+  background-color: black;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.Slider_teeth {
+  font-family: "Dosis", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 2.3em !important;
+}
+.Slider_care {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+.your {
+  display: inline;
+  font-size: 2.3em;
+}
+.your_media {
+  display: none !important;
+}
+.footer_btn_blue {
+  background-color: #00bcd5;
+}
+.myul {
+  list-style-type: none;
+}
+.o {
+  color: var(--blue);
+}
+.carousel-indicators button {
+  /* position: relative; */
+  background-color: black !important;
+}
+.my_slider_move {
+  position: relative;
+}
+.carousel-indicators {
+  position: absolute;
+  top: 350px;
+  right: 350px;
+  left: 50px !important;
+  z-index: 2;
+  left: -100px !important;
+  display: flex;
+  justify-content: center;
+  margin-right: 15% !important;
+  margin-bottom: -2rem;
+  margin-left: 15%;
+  list-style: none;
+  /* background-color: red; */
+}
+
+@media only screen and (max-width: 600px) {
+  .header_right {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .header_top {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+}
+/* navbar  start*/
+
+.mynavbartext {
+  background-color: #00bcd5;
+}
+.mynavbartext a {
+  color: white !important;
+}
+.logotext h1 {
+  /* font-size: .7em; */
+
+  float: left;
+  display: initial;
+  margin: 0;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 3px 0;
+  font-weight: 600;
+}
+.mybtn {
+  background-color: white;
+  color: var(--blue);
+}
+.treat_font {
+  font-weight: 800;
+  line-height: 60px;
+  letter-spacing: 1px;
+  font-size: 3em;
+  /* font-family: 'Dosis', sans-serif; */
+  font: 48pxDosis, sans-serif;
+}
+.btnbg {
+  background-color: var(--blue);
+  color: #fff;
+  margin-top: 10px;
+  padding: 10px;
+}
+.btnbg2 {
+  background-color: var(--pink);
+  color: var(--white);
+  letter-spacing: 1px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.imgrt {
+  height: 250px !important;
+  width: 1500px !important;
+}
+.media_blocks {
+  display: inline;
+}
+.media_inline {
+  display: none;
+}
+@media only screen and (min-width: 576px) {
+}
+
+.mycard {
+  padding: 30px;
+  box-shadow: 3px 3px 5px 2px rgba(141, 78, 78, 0.1);
+}
+.card-text {
+  color: var(--fontcolor);
+}
+.faa {
+  outline: none;
+  color: var(--whitelight);
+  background-color: var(--blue);
+}
+.card-body {
+  padding: 1.5rem !important;
+}
+.rimg {
+  margin-left: 30px;
+  margin-top: 0;
+  border-radius: 50px;
+  height: 90px;
+  width: 90px;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.para_news {
+  text-align: justify;
+  line-height: 1.9 !important;
+  font-weight: normal;
+  color: var(--fontcolor);
+}
+.btn-banner {
+  outline: none;
+  background-color: #00bcd5;
+  border-radius: 0px;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 10px 25px;
+  display: inline-block;
+}
+.btn-banner_navBar {
+  outline: none;
+  background-color: white;
+  border-radius: 5px;
+  color: #00bcd5;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 10px 25px;
+  display: inline-block;
+}
+
+.btn-banner-consult {
+  outline: none;
+  background-color: #ed948e;
+  border-radius: 0px;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 10px 25px;
+  display: inline-block;
+}
+.img_lp {
+  width: 180% !important;
+}
+.texts_para {
+  font-size: large;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.Icons_ALL_Dental {
+  height: 100px;
+  width: 131px;
+  margin-top: 20px;
+}
+.begental {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
+.begental_para {
+  font-family: "Dosis", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 1.7em;
+  color: #555;
+}
+@media only screen and (max-width: 576px) {
+  .content_res {
+    flex-wrap: wrap;
+  }
+  .content_res img {
+    width: 300px;
+  }
+  .mms {
+    flex-wrap: wrap;
+  }
+  .latest {
+    flex-wrap: wrap;
+  }
+  .dental_icon_img {
+    flex-wrap: wrap;
+  }
+
+  .about_icondesc {
+    text-align: center !important;
+  }
+
+  .navbar_ul_text {
+    background-color: white;
+  }
+  .navbar_ul_text a {
+    position: relative;
+    z-index: 99 !important;
+    color: black !important;
+    text-align: center;
+  }
+  .btn-banner_navBar {
+    position: relative;
+    bottom: 287px !important;
+    left: 180px;
+    padding: 5px 10px;
+  }
+  .navbar-brand h5 {
+    font-size: medium !important;
+  }
+  .imgrt {
+    height: 200px !important;
+    width: 350px !important;
+  }
+  .dental2 {
+    height: 261px;
+    width: 236px;
+    margin-top: 50px;
+  }
+  .input_Email_Footer {
+    width: 100px !important;
+  }
+  .input-group {
+    flex-wrap: nowrap;
+  }
+  .carousel-indicators {
+    position: absolute;
+    top: 290px !important;
+    bottom: -60px !important;
+    right: 0 !important;
+    right: 115px !important;
+  }
+  .dental_big_imgs {
+    margin-top: 50px;
+    height: 180px !important;
+    width: 180px !important;
+  }
+  .navbar-toggler {
+    border-radius: none;
+    outline: none;
+    background-color: white !important;
+  }
+  .navbar-toggler:hover {
+    outline: none;
+  }
+  .navbar-toggler-icon {
+    background-image: none !important;
+    border-radius: none !important;
+    padding: 0 !important;
+  }
+  .my-slef_make:hover {
+    color: #555;
+  }
+  .my-slef_make {
+    color: #00bcd5;
+    font-size: large;
+    padding-top: 6px;
+  }
+  .media_blocks {
+    display: inline;
+  }
+ 
+}
+/* navbar  End*/
