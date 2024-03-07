@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <select name="" id="state">
+        <option value="" id="gj">Gujrat</option>
+        <option value="" id="rj">Rajsthan</option>
+        <option value="" id="mh">Maharastra</option>
+    </select>
+
+    <select name="" id="city">
+        <option value="" id="rj"></option>
+        <option value="" id="abd"></option>
+        <option value="" id="surat"></option>
+    </select>
+    <script>
+        $(document).ready(function () {
+            $("#gj").click(function () {
+                $("#city").html("<option>Rajkot</option> <option>Abad</option> <option>Surat</option>")
+            })
+            $("#rj").click(function () {
+                $("#city").html("<option>Jaipur</option> <option>Udaipur</option> <option>Ajmer</option> ")
+            })
+            $("#mh").click(function () {
+                $("#city").html("<option>Mumbai</option> <option>Pune</option> <option>Nagpur</option> ")
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<style>
+.wrapper{
+    width: 500px;
+    margin: 0 auto;
+}
+.progress{
+    width: 100%;
+    background-color: red;
+    padding: 3px;
+    border-radius: 5px;
+}
+.bar{
+    height: 22px;
+    display: block;
+    background-color:black;
+    border-radius: 5px;
+    width: 0;
+    transition: width 500ms ease-in-out ;
+}
+
+</style>
+
+
+<body>
+    
+<div class="wrapper">
+    <div class="progress">
+<span class="bar"></span>
+    </div>
+</div>
+
+<script>
+
+$(document).ready(function(){
+
+let size =  0 ;
+let stop = setInterval(() => {
+    size = size  + 10;
+    $(".bar").css('width',size + '%');
+    if(size >= 100){
+        clearInterval(stop);
+    }
+}, 1000);
+
+
+
+
+})
+
+    
+
+</script>
+
+</body>
+</html>

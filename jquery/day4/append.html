@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<style>
+    .h3 {
+        background-color: aqua;
+        color: brown;
+    }
+</style>
+
+<body>
+    <h3 class="a">Append jquery</h3>
+    <p class="para">some Text Here Append</p>
+    <ol>
+        <li>red</li>
+        <li>gree</li>
+        <li>blue</li>
+    </ol>
+    <button>Add</button>
+    <button class="remove">removeClass</button>
+    <button class="hide">remove</button>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("ol").append("<li>orange</li>");
+                $("ol").prepend("<li>yellow</li>");
+                $("h3").append("demo");
+                $("h3").addClass("h3");
+
+                $("p").before("i Am Added")
+
+
+            })
+            $(".remove").click(function () {
+                $(".a").removeClass("h3")
+            })
+            $(".hide").click(function () {
+                $("p").remove(".para")
+            })
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Dynamic Gallary</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<style>
+    img{
+        width: 300px;
+        height: 300px;
+    }
+</style>
+<body>
+    
+    <button class="btn">Show Images</button>
+    <div id="photos"></div>
+    <script>
+    
+        var gallery = ['i1.jpg','i2.jpg','i3.jpg', 'i4.jpg'];
+        $(document).ready(function () {
+            $(".btn").click(function (index) {
+                //<!-- $.each(gallery,function(index,value)  {
+                //  $("#photos").html(`<img src=${gallery}>`)
+                // }); -->
+                for(let i of gallery){
+                    $("#photos").html(index += `<img src = ${i}> `)
+                }    
+               
+            })
+        })
+    </script>
+</body>
+
+</html>

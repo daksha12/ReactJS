@@ -1,0 +1,40 @@
+{
+  "info": {
+    "_postman_id": "15213d77-80ea-486b-8363-39933af33665",
+    "name": "SMVS",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "21583567"
+  },
+  "item": [
+    {
+      "name": "http://127.0.0.1:8000/api/banner/7",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/banner",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["api", "banner"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/dailydarshan/4",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/dailydarshan",
+          "protocol": "http",
+          "host": ["127", "0", "0", "1"],
+          "port": "8000",
+          "path": ["api", "dailydarshan"]
+        }
+      },
+      "response": []
+    }
+  ]
+}

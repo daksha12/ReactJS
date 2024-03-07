@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT FORM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<style>
+    h1 {
+        color: brown;
+    }
+
+    .method {
+        padding-top: 20px;
+       
+    }
+    .method button{
+        padding: 15px;
+    }
+    h3 {
+        color: brown;
+    }
+    input{
+        padding: 7px;
+        width: 30%;
+    }
+    .credit_info{
+        padding-top: 35px;
+    }
+</style>
+
+<body>
+    <div class="creditCardMain">
+        <center>
+            <h1>Payment Form</h1>
+        </center>
+        <center>
+            <div class="method">
+                <button id="btn1"><a href="credit_card.html"><i class="fa-solid fa-credit-card" style="font-size:45px"></i>  <p>Credit Card</p></a></button>
+           
+                <button><i class="fa-solid fa-mobile-screen-button" style="font-size:45px"></i><p>Net Banking</p></button>
+               
+                <button><a href="paypal.html"><i class="fa-brands fa-paypal" style="font-size:45px"></i><p>Paypal</p></a></button>
+                <button><i class="fa-solid fa-credit-card" style="font-size:45px"></i><p>Debit Card</p></button>
+            </div>
+        </center>
+    
+       
+    </div>
+
+   <div class="debit">
+    <center><h1>Dedit Card Info</h1>
+    
+    <input type="text" placeholder="Name On Card"><br><br>
+    <input type="text" placeholder="Card Number"><br><br>
+    <input type="text" placeholder="Cvv No"><br><br>
+    <button>SUBMIT</button>
+
+    <center>
+
+   </div>
+    <script>
+       // $(document).ready(function(){
+         //   $("#btn1").click(function(){
+           //     $(".creditCardMain").hide(2000)
+            //})
+       // })
+    </script>
+</body>
+
+</html>

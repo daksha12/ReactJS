@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <h1> Welcome </h1>
+    <h1 id="head"> Welcome </h1>
+    <h2> Welcome </h2>
+    <p class="p1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsum veniam rerum! Repellendus doloribus dolore perspiciatis labore laboriosam debitis veritatis. Nostrum provident id labore esse illum ipsam quasi adipisci magni!</p>
+    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis distinctio corporis accusamus, impedit sed voluptas voluptatibus. Reprehenderit sit amet laudantium nisi blanditiis voluptates ab, nemo libero ipsam alias quidem asperiores!</p>
+    <p class="p1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsum veniam rerum! Repellendus doloribus dolore perspiciatis labore laboriosam debitis veritatis. Nostrum provident id labore esse illum ipsam quasi adipisci magni!</p>
+
+    <button id="btn1"> Hide </button>
+    <button id="btn2"> Show </button>
+    <button id="btn3"> Toggle </button>
+
+    <script src="jquery.min.js"></script>
+    
+<script>
+                $(document).ready(function(){
+                    $("#btn1").click(function(){
+                                // alert(" welcome");
+                                $(".p1").fadeIn(2000)
+                        });
+
+                    $("#btn2").click(function(){
+                            $(".p1").fadeOut(1000)
+                    });  
+                    
+                    $("#btn3").click(function(){
+                            $(".p1").fadeToggle("slow")
+                    });  
+
+                });
+</script>
+
+</body>
+</html>
