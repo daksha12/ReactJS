@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<style>
+    body {
+        /* background-color: yellow; */
+        background-image: linear-gradient(to left, red,yellow,pink,orange);
+    }
+    h1{
+        font-family:monospace;
+        color :#ff0066;
+    }
+
+    .box {
+        margin: 150px;
+        height: 300px;
+        width: 300px;
+    }
+    
+    input {
+        text-transform: capitalize;
+        border-radius: 5px;
+        font-size: large;
+        padding: 10px;
+    }
+
+    button {
+        border-radius: 5px;
+        font-size: large;
+        padding: 10px;
+    }
+    button:hover{
+        color: #ff0066;
+        background-color:#ffbf8c;
+        
+    }
+</style>
+
+<body>
+    <div class="box">
+        <h1>Simple Interest</h1>
+        <input type="text" id="t1" placeholder="Enter p"><br><br>
+        <input type="text" id="t2" placeholder="Enter R"><br><br>
+        <input type="text" id="t3" placeholder="Enter N"><br><br>
+        <input type="text" id="t4" placeholder="ANS"><br><br>
+
+        <button id="si">SIMPLE INTERST</button>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#si").click(function () {
+                
+                var p = $("#t1").val();
+                
+                var r = $("#t2").val();
+                var n = $("#t3").val();
+                var si = parseInt(p) * parseInt(r) * parseInt(n) / 100;
+               
+         
+                $("#t4").val(si);
+            })
+        })
+    </script>
+</body>
+
+</html>

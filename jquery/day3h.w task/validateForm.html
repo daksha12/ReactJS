@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<style>
+    body {
+        height: auto;
+        color: black;
+
+    }
+
+    img {
+        opacity: 0.4;
+        position: relative;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .main {
+        top: 0;
+        position: absolute;
+        width: 50%;
+        /* border: 1px solid red; */
+        padding: 30px;
+        margin: 80px;
+    }
+
+    input {
+
+        font-size: 20px;
+        height: 35px;
+    }
+
+    label {
+        font-size: 20px;
+        height: 35px;
+    }
+
+    p {
+        font-size: 20px;
+
+    }
+
+    h1 {
+        color: rgb(154, 49, 49);
+    }
+
+    button {
+        border-radius: 5px;
+        font-size: 25px;
+        padding: 15px;
+    }
+</style>
+
+<body>
+    <img src="i4.jpg" alt="">
+    <div class="main">
+        <h1>Registration Form</h1>
+        <form action="" id="form">
+            <label for="">Enter First Name</label>
+            <input type="text" id="t1" required><br><br>
+
+            <label for="">Enter Last Name</label>
+            <input type="text" id="t2" required><br><br>
+
+            <label for="">Enter Age</label>
+            <input type="text" id="t3" maxlength="2" required><br><br>
+
+            Select Gender
+            <input type="radio" name="mygender" id="ml" value="Male" />Male
+            <input type="radio" name="mygender" id="fml" value="Female" />Female
+            <input type="radio" name="mygender" id="other" value="Other" />Other
+            <br /><br />
+
+            Choose Hobbie
+            <input type="checkbox" name="chk" id="h1">Music
+            <input type="checkbox" name="chk" id="h2">Dance
+            <input type="checkbox" name="chk" id="h3">Reading<br><br>
+
+
+            <label for="">Enter Email</label>
+            <input type="email" id="t4" required><br><br>
+
+            <label for="">Enter Password</label>
+            <input type="password" id="t5" class="psw1" maxlength="8" required>
+            <input type="checkbox" onclick="display1()">Show <br><br>
+
+            <label for="">Confirm Password</label>
+            <input type="password" id="t6" class="psw2" maxlength="8" required>
+            <input type="checkbox" onclick="display2()">Show<br><br>
+            <button id="btn" onclick="validate()">SUBMIT</button>
+            <P id="error"></P>
+
+    </div>
+    </div>
+
+    </form>
+    <script>
+        const Name = document.getElementById('t1');
+        const form = document.getElementById('form');
+        const errorElement = document.getElementById('error')
+
+        form.addEventListener('submit', (e) => {
+            let messages = []
+            if (Name.value === '' || Name.value == null) {
+                messages.push('Name is compulsory')
+            }
+
+            if (Name.value.length <= 6) {
+    messages.push('Password must be longer than 6 characters')
+  }
+
+            if (messages.length > 0) {
+                e.preventDefault()
+                errorElement.innerText = messages.join(', ')
+            }
+        })
+    </script>
+</body>
+
+</html>
